@@ -1,4 +1,4 @@
-<h1 align="center" style="font-size:40px;">🔥 Apache Auto Setup + Cloudflare Integration 🔥</h1>
+<h1 align="center" style="font-size:40px;">Apache Auto Setup and Cloudflare Integration</h1>
 
 <p align="center">
   <b>Script bash all-in-one to installing Apache, domain setup, SSL, dan dukungan penuh Cloudflare.</b><br>
