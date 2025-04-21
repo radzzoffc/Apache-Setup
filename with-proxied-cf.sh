@@ -12,7 +12,7 @@ sudo apt update && sudo apt upgrade -y
 echo "[+] Install Apache dan Certbot..."
 sudo apt install apache2 certbot python3-certbot-apache curl ufw -y
 
-echo "[+] Bikin direktori /var/www/$domain ..."
+echo "[+] Create direktori /var/www/$domain ..."
 sudo mkdir -p /var/www/$domain
 sudo chown -R $USER:$USER /var/www/$domain
 sudo chmod -R 755 /var/www/$domain
@@ -85,7 +85,7 @@ STATUS=$(systemctl is-active apache2)
 
 echo ""
 echo "====================================================="
-echo "[✓] Setup selesai!"
+echo "[✓] Setup selesai"
 echo "Domain       : https://$domain"
 echo "Folder Web   : /var/www/$domain"
 echo "Edit File    : /var/www/$domain/index.html"
