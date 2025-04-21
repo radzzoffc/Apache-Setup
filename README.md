@@ -36,3 +36,19 @@ git clone https://github.com/yourusername/apache-auto-setup.git
 cd apache-auto-setup
 chmod +x auto-apache.sh
 ./auto-apache.sh
+
+---
+
+## ⚜️ Output Script
+Masukin nama domain (tanpa https://):
+mydomain.com
+Apakah website lo berada di belakang Cloudflare? (ya/tidak):
+ya
+[+] Update sistem...
+[+] Install Apache dan Certbot...
+[✓] Setup selesai!
+Domain       : https://mydomain.com
+Folder Web   : /var/www/mydomain.com
+Edit File    : /var/www/mydomain.com/index.html
+Status Apache: active
+Cloudflare   : ENABLED (IP protection & real IP fix aktif)
