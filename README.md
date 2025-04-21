@@ -7,7 +7,7 @@
 
 ---
 
-## ✨ Fitur
+## Fitur
 
 - Instalasi otomatis Apache Web Server
 - Setup Virtual Host berdasarkan nama domain
@@ -20,7 +20,7 @@
 
 ---
 
-## ⚙️ Syarat
+## Syarat
 
 - VPS Ubuntu/Debian
 - Akses root/sudo
@@ -29,17 +29,23 @@
 
 ---
 
-## 🚀 Cara Pakai
+## Cara Pakai
 
 - apt install bash git -y
 - git clone https://github.com/radzzoffc/Apache-Setup.git
 - cd apache-auto-setup
-- chmod +x with-proxied-cf.sh (tanpa cf gunakan Without)
-- ./with-proxied-cf.sh
+- chmod +x namafile-pilihan.sh
+- ./namafile-pilihan.sh
 
 ---
 
-## ⚜️ Output Script
+## Keterangan File
+
+- nssl-conf.sh = tanpa setup ssl
+- with-proxied-cf.sh = dengan ssl dan pilihan proxied cf
+- without-proxied-cf.sh = tanpa proxy cf tapi ber ssl
+
+## Output Script
 
 - Masukin nama domain (tanpa https://):
 - Apakah website berada di belakang Cloudflare? (ya/tidak):
@@ -54,7 +60,7 @@
 
   ---
 
-## ⚠️ Author - TqTo - Licence
+## Author - TqTo - Licence
 
 - Author
   - RadzzOffc
