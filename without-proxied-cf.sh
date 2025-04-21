@@ -31,6 +31,15 @@ sudo bash -c "cat > /etc/apache2/sites-available/$domain.conf" <<EOL
     ServerName $domain
     ServerAlias www.$domain
     DocumentRoot /var/www/$domain
+
+    <Directory /var/www/$domain>
+        Options Indexes FollowSymLinks
+        AllowOverride All
+        Require all granted
+    </Directory>
+
+    DirectoryIndex index.php index.html
+
     ErrorLog \${APACHE_LOG_DIR}/$domain-error.log
     CustomLog \${APACHE_LOG_DIR}/$domain-access.log combined
 </VirtualHost>
