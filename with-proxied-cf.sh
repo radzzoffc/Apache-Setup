@@ -20,10 +20,11 @@ sudo chmod -R 755 /var/www/$domain
 cat <<EOF | sudo tee /var/www/$domain/index.html
 <html>
   <head>
-    <title>Welcome to $domain!</title>
+    <title>Radzz | Aphace successfully installed</title>
   </head>
   <body>
-    <h1>Apache berhasil disetup untuk $domain</h1>
+  <br><br>
+    <h1>Apache berhasil disetup sempurna untuk<br>$domain</h1>
   </body>
 </html>
 EOF
@@ -41,7 +42,7 @@ sudo bash -c "cat > /etc/apache2/sites-available/$domain.conf" <<EOL
         Require all granted
     </Directory>
 
-    DirectoryIndex index.php index.html
+    DirectoryIndex index.html index.php
 
     ErrorLog \${APACHE_LOG_DIR}/$domain-error.log
     CustomLog \${APACHE_LOG_DIR}/$domain-access.log combined
