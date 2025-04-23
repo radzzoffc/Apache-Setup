@@ -42,7 +42,7 @@ sudo bash -c "cat > /etc/apache2/sites-available/$domain.conf" <<EOL
         Require all granted
     </Directory>
 
-    DirectoryIndex index.html index.php
+    DirectoryIndex index.php index.html
 
     ErrorLog \${APACHE_LOG_DIR}/$domain-error.log
     CustomLog \${APACHE_LOG_DIR}/$domain-access.log combined
